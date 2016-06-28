@@ -33,6 +33,10 @@ orders, etc. to the addresses below.
 <http://www.acme.com/jef/>
 
 ***
+Notice: http_load use GET method and limit parameters length 500.
+Modified http_load.c:937 and 1030~1044 lines to making it support more.
+
+***
 We modified the http_load to making it demonstrates the percentage distribution of response time. Like:
 
     $ http_load -r 100 -s 60 urls
